@@ -1,15 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 /* Reset some default browser styles */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-a,
-img {
+* {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -19,19 +12,23 @@ img {
 
 /* Basic body and text styling */
 body {
-  
+  width: 100%;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #000000;
+  background-color: rgb(17, 17, 17);
 }
 /* Header styling */
-.header{
-  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+.header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
 }
-
 
 /* Navigation styling */
 nav {
+  margin: 4rem 11rem 2rem 11rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,10 +45,14 @@ nav .logo {
 nav ul {
   display: flex;
   gap: 67px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 0.75rem 0.2rem;
 }
 
 nav ul li a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
@@ -61,7 +62,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #E6533C;
+  background-color: #e6533c;
   border-radius: 46px;
 }
 
@@ -70,21 +71,31 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px;
+  border: 1px solid #ff0000;
+  margin: 4rem 11rem 2rem 11rem;
+}
+
+.hero-text {
+  width: 520px;
 }
 
 .hero-section .hero-text h1 {
-  font-size: 48px;
-  line-height: 1.2;
+  font-size: 4.875rem;
+  font-weight: 900;
 }
 
 .hero-section .hero-text span {
-  color: #ff0000;
+  font-family: "Miama";
+  font-size: 4.875rem;
+  font-weight: 400;
 }
 
 .hero-section .hero-text p {
-  margin: 20px 0;
-  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
 }
 
 .hero-section .cta-buttons .btn-primary {
@@ -92,17 +103,45 @@ nav ul li a:hover {
   margin-right: 10px;
   background-color: #ff0000;
   color: #ffffff;
+  border: 1px solid #ff0000;
   border-radius: 42px;
 }
+
 .btn-secondary {
   padding: 10px 20px;
   margin-right: 10px;
   color: #ffffff;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 42px;
 }
 
 .hero-section .hero-image img {
   max-width: 100%;
   height: auto;
+}
+
+/* Footer styling */
+footer {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.footer-container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-section{
+  width: 25%;
+  text-align: left;
+  margin-right: 6.375rem;
+  padding: 10px auto;
+}
+footer hr {
+  border: 0;
+  height: 1px;
+  width: 80%;
+  background: #444444;
+  margin: 20px auto;
 }
