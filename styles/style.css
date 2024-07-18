@@ -200,13 +200,6 @@ footer hr {
 
 /* Small devices (up to 576px) */
 @media (max-width: 576px) {
-  
-  
-  
-  
-  
-  
-  /* Footer Styling */
   .footer-container {
     margin: 2rem 1rem;
     flex-direction: column;
@@ -231,6 +224,5 @@ footer hr {
 
   .footer-ul {
     font-size: 1rem;
-    align-items: left;
   }
 }
