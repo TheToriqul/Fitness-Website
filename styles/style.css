@@ -8,6 +8,7 @@
   list-style: none;
   text-decoration: none;
   border: none;
+  box-sizing: border-box;
 }
 
 /* Basic body and text styling */
@@ -52,8 +53,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
@@ -126,17 +126,54 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   text-align: center;
 }
-.footer-container{
-  width: 80%;
+.footer-container {
+  margin: 4rem 11rem 2rem 11rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
 }
-.logo-section{
+.logo-section {
   width: 25%;
   text-align: left;
   margin-right: 6.375rem;
-  padding: 10px auto;
+}
+.logo-section h3 {
+  color: rgb(230, 83, 60);
+  font-size: 4.37rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.logo-section p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-links h4 {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 8px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-links ul li a:hover {
+  column-gap: 20px;
+  color: #ff0000;
 }
 footer hr {
   border: 0;
@@ -145,3 +182,10 @@ footer hr {
   background: #444444;
   margin: 20px auto;
 }
+.copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Media queries for responsiveness */
