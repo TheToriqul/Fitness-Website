@@ -16,7 +16,7 @@ body {
   width: 100%;
   font-family: "Inter";
   color: #ffffff;
-  background-color: black
+  background-color: black;
 }
 /* Header styling */
 .header {
@@ -136,13 +136,13 @@ nav ul li a:hover {
   padding: 0 15px;
 }
 
-h2 {
+.container h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 20px;
 }
 
-p {
+.container p {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 40px;
@@ -185,11 +185,11 @@ p {
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
-  border-radius: 18px;
   background-color: black;
   color: #ffffff;
   margin-bottom: 100px;
-  border: 1px solid red;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
 }
 
 .extra-mile-container {
@@ -286,14 +286,14 @@ p {
 .training-card-1 {
   position: relative;
 }
-.training-card-1 img {
-}
+
 .training-card-1 p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-300%, 320%);
   font-size: 1.2rem;
+  color: #ffffff;
 }
 .training-card-2 {
   position: relative;
@@ -303,7 +303,8 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-300%, -400%);
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
+  color: #ffffff;
 }
 .training-card-3 {
   position: relative;
@@ -313,7 +314,8 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-350%, 300%);
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
+  color: #ffffff;
 }
 .training-card-4 {
   position: relative;
@@ -324,6 +326,7 @@ p {
   left: 50%;
   transform: translate(200%, -350%);
   font-size: 1.2rem;
+  color: #ffffff;
 }
 .training-card-5 {
   position: relative;
@@ -334,6 +337,7 @@ p {
   left: 50%;
   transform: translate(-350%, 300%);
   font-size: 1.2rem;
+  color: #ffffff;
 }
 .training-card-6 {
   position: relative;
@@ -344,7 +348,231 @@ p {
   left: 50%;
   transform: translate(-280%, 280%);
   font-size: 1.2rem;
+  color: #ffffff;
 }
+
+/* BMI Calculator Section Styles */
+.bmi-calculator {
+  width: 100%;
+}
+.bmi-container {
+  background: rgb(34, 34, 34);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 52px 187px;
+  text-align: center;
+}
+
+.bmi-head {
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 88px;
+}
+.bmi-head h2 {
+  text-align: left;
+  font-size: 48px;
+  font-weight: 900;
+}
+.bmi-head p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+p {
+  color: #a0a0a0;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.bmi-calculator-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* BMI Chart Styling */
+.bmi-chart {
+  width: 35%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.bmi-chart h3 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th {
+  padding: 10px 20px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+td {
+  padding: 10px 20px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* BMI Form Styling */
+.bmi-form-container {
+  width: 45%;
+}
+
+.bmi-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border-radius: 10px;
+}
+.form-alignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.bmi-form-container h3 {
+  font-size: 28px;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.bmi-form-container p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 34px;
+}
+
+.Select-activity {
+  width: 100%;
+  grid-column: span 2;
+}
+
+input[type="number"],
+select {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border: 1px solid #383838;
+  border-radius: 5px;
+  background-color: #383838;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #ff5722;
+}
+
+.btn {
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  margin-top: 34px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f44336;
+}
+
+/* Team Section Styles */
+.team {
+  padding: 80px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30%, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.team-member {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 90%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 15px;
+}
+
+/* Testimonial Styling */
+.testimonials-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.testimonial {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
 
 /* Footer styling */
 footer {
