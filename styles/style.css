@@ -126,6 +126,7 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   text-align: center;
 }
+
 .footer-container {
   margin: 4rem 11rem 2rem 11rem;
   display: flex;
@@ -133,11 +134,13 @@ footer {
   align-items: center;
   width: 80%;
 }
+
 .logo-section {
   width: 25%;
   text-align: left;
   margin-right: 6.375rem;
 }
+
 .logo-section h3 {
   color: rgb(230, 83, 60);
   font-size: 4.37rem;
@@ -145,47 +148,89 @@ footer {
   font-style: italic;
   margin-bottom: 20px;
 }
+
 .logo-section p {
   color: rgba(255, 255, 255, 0.5);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
+
 .footer-links h4 {
-  text-decoration: none;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .footer-ul {
   display: flex;
   flex-direction: column;
-  justify-content: left;
   align-items: flex-start;
   gap: 20px;
   padding-left: 8px;
   font-size: 1.5rem;
   font-weight: 400;
 }
+
 .footer-links ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
 }
+
 .footer-links ul li a:hover {
-  column-gap: 20px;
   color: #ff0000;
 }
+
 footer hr {
-  border: 0;
+  border: none;
   height: 1px;
   width: 80%;
   background: #444444;
   margin: 20px auto;
 }
+
 .copyright {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 /* Media queries for responsiveness */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  
+  
+  
+  
+  
+  
+  /* Footer Styling */
+  .footer-container {
+    margin: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo-section,
+  .footer-links {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 2rem 0;
+  }
+
+  .logo-section h3 {
+    font-size: 2.5rem;
+  }
+
+  .footer-links h4 {
+    font-size: 1.5rem;
+  }
+
+  .footer-ul {
+    font-size: 1rem;
+    align-items: left;
+  }
+}
