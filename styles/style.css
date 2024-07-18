@@ -16,7 +16,7 @@ body {
   width: 100%;
   font-family: "Inter";
   color: #ffffff;
-  background-color: rgb(17, 17, 17);
+  background-color: black
 }
 /* Header styling */
 .header {
@@ -29,7 +29,8 @@ body {
 
 /* Navigation styling */
 nav {
-  margin: 4rem 11rem 2rem 11rem;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +73,8 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   border: 1px solid #ff0000;
-  margin: 4rem 11rem 2rem 11rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -98,7 +100,7 @@ nav ul li a:hover {
   margin-bottom: 2rem;
 }
 
-.hero-section .cta-buttons .btn-primary {
+.hero-section .btn-primary {
   padding: 10px 20px;
   margin-right: 10px;
   background-color: #ff0000;
@@ -120,25 +122,248 @@ nav ul li a:hover {
   height: auto;
 }
 
+/* Section 1 Change Habit styling */
+.change-habits {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+  margin-bottom: 100px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.habits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.habit-card {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.habit-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.habit-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.habit-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Section 2 Running styling */
+.extra-mile {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-radius: 18px;
+  background-color: black;
+  color: #ffffff;
+  margin-bottom: 100px;
+  border: 1px solid red;
+}
+
+.extra-mile-container {
+  margin: 40px 0px 40px 0px;
+}
+.extra-mile h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.extra-mile p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 400px;
+  text-align: left;
+}
+
+.extra-mile .btn-primary {
+  width: 45%;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  border-radius: 42px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.extra-mile-image {
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.extra-mile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-left: 8rem;
+}
+
+/* Section 3 Training styling */
+.trainings {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.trainings img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+.training-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.training-content {
+  max-width: 573px;
+}
+.training-content h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: left;
+}
+.training-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.row-1,
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.row-1 {
+  grid-template-columns: 1fr, 2fr, 1fr;
+}
+.row-2 {
+  grid-template-columns: 1.5fr, 1fr, 1.5fr;
+}
+
+.training-card-1 {
+  position: relative;
+}
+.training-card-1 img {
+}
+.training-card-1 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, 320%);
+  font-size: 1.2rem;
+}
+.training-card-2 {
+  position: relative;
+}
+.training-card-2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -400%);
+  font-size: 1.2rem;
+}
+.training-card-3 {
+  position: relative;
+}
+.training-card-3 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-350%, 300%);
+  font-size: 1.2rem;
+}
+.training-card-4 {
+  position: relative;
+}
+.training-card-4 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(200%, -350%);
+  font-size: 1.2rem;
+}
+.training-card-5 {
+  position: relative;
+}
+.training-card-5 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-350%, 300%);
+  font-size: 1.2rem;
+}
+.training-card-6 {
+  position: relative;
+}
+.training-card-6 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-280%, 280%);
+  font-size: 1.2rem;
+}
+
 /* Footer styling */
 footer {
-  padding: 20px;
+  padding: 66px 0px 10px 0px;
   background: rgba(255, 255, 255, 0.1);
   text-align: center;
 }
 
 .footer-container {
-  margin: 4rem 11rem 2rem 11rem;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 80%;
 }
 
 .logo-section {
-  width: 25%;
+  width: 35%;
   text-align: left;
-  margin-right: 6.375rem;
+  padding-right: 20px;
 }
 
 .logo-section h3 {
@@ -154,6 +379,7 @@ footer {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  text-align: left;
 }
 
 .footer-links h4 {
@@ -167,7 +393,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  padding-left: 8px;
+  list-style-type: none;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -185,9 +411,11 @@ footer {
 footer hr {
   border: none;
   height: 1px;
-  width: 80%;
+  width: 90%;
+  margin: 0 auto;
   background: #444444;
-  margin: 20px auto;
+  margin-top: 79px;
+  margin-bottom: 36px;
 }
 
 .copyright {
