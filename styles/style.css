@@ -131,7 +131,6 @@ nav ul li a:hover {
 
 .hero-image {
   width: 30%;
-  margin-right: 200px;
   position: relative;
 }
 
@@ -141,8 +140,8 @@ nav ul li a:hover {
 
 .card-1 {
   position: absolute;
-  bottom: 30%;
-  transform: translateY(120%);
+  bottom: 10%;
+  transform: translate(-50%);
   padding: 20px 40px;
   border-radius: 10px;
   display: flex;
@@ -185,7 +184,19 @@ nav ul li a:hover {
   align-items: center;
   gap: 5px;
 }
+.ball-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
+}
+.ball{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
 .number {
   font-size: 24px;
   font-weight: 900;
