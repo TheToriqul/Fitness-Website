@@ -20,7 +20,11 @@ body {
 }
 /* Header styling */
 .header {
-  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.025) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0.025) 100%
+  );
 }
 
 /* Navigation styling */
@@ -184,14 +188,13 @@ nav ul li a:hover {
   align-items: center;
   gap: 5px;
 }
-.ball-card{
+.ball-card {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-
 }
-.ball{
+.ball {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -738,7 +741,157 @@ footer hr {
 /* Media queries for responsiveness */
 
 /* Small devices (up to 576px) */
+
 @media (max-width: 576px) {
+  /* Header styling */
+  .header {
+    padding: 10px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  /* Hero section styling */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .hero-text {
+    width: 100%;
+    padding-right: 0;
+  }
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .card-1,
+  .card-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 10px;
+  }
+
+  /* Section 1 Change Habit styling */
+  .change-habits {
+    padding: 20px 0;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .habits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Section 2 Running styling */
+  .extra-mile {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .extra-mile-container {
+    margin: 20px 0;
+  }
+  .extra-mile h2 {
+    font-size: 2rem;
+  }
+  .extra-mile p {
+    font-size: 0.8rem;
+  }
+  .extra-mile .btn-primary {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .extra-mile-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Section 3 Training styling */
+  .trainings {
+    padding: 20px 0;
+  }
+  .training-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .training-content {
+    max-width: 100%;
+  }
+  .training-content h2 {
+    font-size: 2rem;
+  }
+  .training-content p {
+    font-size: 0.8rem;
+  }
+  .row-1,
+  .row-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* BMI Calculator Section Styles */
+  .bmi-calculator {
+    padding: 20px;
+  }
+  .bmi-container {
+    padding: 20px;
+  }
+  .bmi-head {
+    width: 100%;
+    margin: 0;
+  }
+  .bmi-head h2 {
+    font-size: 2rem;
+  }
+  .bmi-head p {
+    font-size: 0.8rem;
+  }
+  .bmi-calculator-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bmi-chart {
+    width: 100%;
+    padding: 10px;
+  }
+  .bmi-form-container {
+    width: 100%;
+  }
+  .bmi-form {
+    grid-template-columns: 1fr;
+  }
+  .Select-activity {
+    grid-column: span 1;
+  }
+
+  /* Team Section Styles */
+  .team {
+    padding: 20px 0;
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonial Styling */
+  .testimonials-section {
+    padding: 20px 0;
+  }
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer-container {
     margin: 2rem 1rem;
     flex-direction: column;
