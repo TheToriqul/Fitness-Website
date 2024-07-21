@@ -36,7 +36,9 @@ nav {
   align-items: center;
   padding: 20px;
 }
-
+.mobile-menu {
+  display: none;
+}
 nav .logo {
   color: rgb(230, 83, 60);
   font-size: 36px;
@@ -380,7 +382,7 @@ nav ul li a:hover {
 .training-card-1 p {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-300%, 320%);
   font-size: 1.2rem;
   color: #ffffff;
@@ -391,7 +393,7 @@ nav ul li a:hover {
 .training-card-2 p {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-300%, -400%);
   font-size: 1.2rem;
   color: #ffffff;
@@ -402,7 +404,7 @@ nav ul li a:hover {
 .training-card-3 p {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-350%, 300%);
   font-size: 1.2rem;
   color: #ffffff;
@@ -413,7 +415,7 @@ nav ul li a:hover {
 .training-card-4 p {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(200%, -350%);
   font-size: 1.2rem;
   color: #ffffff;
@@ -424,7 +426,7 @@ nav ul li a:hover {
 .training-card-5 p {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-350%, 300%);
   font-size: 1.2rem;
   color: #ffffff;
@@ -435,7 +437,7 @@ nav ul li a:hover {
 .training-card-6 p {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-250%, 280%);
   font-size: 1.2rem;
   color: #ffffff;
@@ -634,7 +636,7 @@ select:focus {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   justify-items: center;
 }
@@ -744,18 +746,37 @@ footer hr {
 
 /* Small devices (up to 576px) */
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+  }
   /* Header styling */
   .header {
     padding: 10px;
   }
   nav {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+  .menu a {
+    display: block;
   }
   nav ul {
     flex-direction: column;
     gap: 20px;
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu i {
+    font-size: 1.5rem;
   }
   nav ul li a {
     font-size: 1rem;
@@ -776,19 +797,28 @@ footer hr {
   }
   .hero-image {
     width: 100%;
-  }
-  .card-1,
-  .card-2 {
     position: relative;
-    top: 0;
-    left: 0;
+  }
+  .card-1 {
+    position: absolute;
+    top: 75%;
+    left: 0%;
     transform: none;
     padding: 10px;
+  }
+  .card-2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: none;
+    padding: 8px;
   }
 
   /* Section 1 Change Habit styling */
   .change-habits {
     padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .container {
     max-width: 100%;
@@ -817,7 +847,7 @@ footer hr {
     width: 100%;
     padding: 10px 20px;
   }
-  .extra-mile-image img{
+  .extra-mile-image img {
     margin-left: 0px;
   }
   .extra-mile-image {
@@ -848,15 +878,15 @@ footer hr {
   }
 
   /* BMI Calculator Section Styles */
-  .bmi-calculator {
-    padding: 20px;
-  }
   .bmi-container {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
   }
   .bmi-head {
-    width: 100%;
-    margin: 0;
+    width: 60%;
+    margin: 5%;
   }
   .bmi-head h2 {
     font-size: 2rem;
@@ -866,25 +896,29 @@ footer hr {
   }
   .bmi-calculator-content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .bmi-chart {
     width: 100%;
-    padding: 10px;
+    text-align: left;
+    padding: 0px;
+    margin: 20px 0px;
   }
   .bmi-form-container {
     width: 100%;
   }
   .bmi-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 170px);
   }
   .Select-activity {
-    grid-column: span 1;
+    grid-column: span 2;
   }
 
   /* Team Section Styles */
   .team {
-    padding: 20px 0;
+    /* width: 0%;
+    margin: 0px auto; */
+    padding: 20px 10px;
   }
   .team-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -897,11 +931,13 @@ footer hr {
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Footer Styling */
   .footer-container {
     margin: 2rem 1rem;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
   }
 
   .logo-section,
