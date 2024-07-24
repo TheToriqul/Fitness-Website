@@ -52,25 +52,32 @@ To get a local copy up and running, follow these simple steps:
 ```plaintext
 PH-Assignment2/
 │
-├── images/
-│   ├── exercise1.jpg
-│   ├── exercise2.png
-│   ├── exercise3.png
-│   ├── exercise4.png
-│   ├── exercise5.jpg
-│   ├── exercise6.jpg
-│   ├── Images2.png
-│   ├── movement.png
-│   ├── practice.png
-│   ├── running.jpg
-│   ├── time.png
-│   ├── trainer1.png
-│   ├── trainer2.png
-│   ├── trainer3.png
-│   ├── trainer4.png
-│   ├── trainer5.png
-│   ├── trainer6.png
-│   ├── weight-loss.png
+├── assets/
+│   ├── images/
+│   │   ├── exercise1.jpg
+│   │   ├── exercise2.png
+│   │   ├── exercise3.png
+│   │   ├── exercise4.png
+│   │   ├── exercise5.jpg
+│   │   ├── exercise6.jpg
+│   │   ├── Images2.png
+│   │   ├── movement.png
+│   │   ├── practice.png
+│   │   ├── running.jpg
+│   │   ├── time.png
+│   │   ├── weight-loss.png
+│   │   ├── trainer1.png
+│   │   ├── trainer2.png
+│   │   ├── trainer3.png
+│   │   ├── trainer4.png
+│   │   ├── trainer5.png
+│   │   ├── trainer6.png
+│   │   ├── Alex-Smith.png
+│   │   ├── Maria-Garcia.png
+│   │   ├── John-Doe.png
+│   │   ├── Emily-Chen.png
+│   │   ├── Michael-Brown.png
+│   │   ├── Jessica-Lee.png
 │
 ├── styles/
 │   ├── style.css
@@ -78,6 +85,7 @@ PH-Assignment2/
 ├── index.html
 │
 ├── README.md
+
 ```
 
 ## Contributing
