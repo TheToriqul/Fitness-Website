@@ -52,9 +52,11 @@ nav ul {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 39px;
-  padding: 0.75rem 0.2rem;
+  padding: 0.2rem 0.2rem;
 }
-
+.menu{
+  align-items: center;
+}
 nav ul li a {
   font-size: 1.15rem;
   font-weight: 600;
@@ -67,6 +69,11 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #e6533c;
   border-radius: 46px;
+}
+#Home {
+  background-color: #e6533c;
+  border-radius: 46px;
+  padding: 10px 15px;
 }
 
 /* Hero section styling */
