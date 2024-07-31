@@ -281,16 +281,19 @@ nav ul li a:hover {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
+  padding: 2rem 2rem 2rem 5rem;
   color: #ffffff;
   margin-bottom: 100px;
   border-radius: 18px;
   background: rgb(34, 34, 34);
+  /* border: 1px solid red; */
 }
 
 .extra-mile-container {
   margin: 40px 0px 40px 0px;
+  /* border: 1px solid red; */
 }
 .extra-mile h2 {
   font-size: 3rem;
@@ -323,16 +326,16 @@ nav ul li a:hover {
 
 .extra-mile-image {
   width: 400px;
-  height: 280px;
-  border-radius: 5px;
+  height: 350px;  
 }
 
 .extra-mile-image img {
   width: 100%;
   height: 100%;
   border-radius: 18px;
-  object-fit: cover;
-  margin-left: 8rem;
+  object-fit:cover;
+  object-position: 100% center;
+  /* margin-right: 5px; */
 }
 
 /* Section 3 Training styling */
