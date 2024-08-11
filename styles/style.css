@@ -681,7 +681,7 @@ select:focus {
 .testimonial {
   width: 90%;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 0px 0px 80px 0px;
 }
 
 .testimonial h2 {
@@ -693,7 +693,7 @@ select:focus {
   font-size: 1rem;
   margin-bottom: 40px;
 }
-.testimonial-content{
+.testimonial-content {
   text-align: center;
 }
 
@@ -712,7 +712,7 @@ select:focus {
   border-radius: 18px;
   text-align: center;
 }
-.testimonial-grid h3{
+.testimonial-grid h3 {
   margin-bottom: 15px;
 }
 
@@ -722,6 +722,8 @@ select:focus {
   object-fit: cover;
   border-radius: 18px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  opacity: 0.5;
 }
 /* Footer styling */
 footer {
@@ -881,6 +883,7 @@ footer hr {
     padding: 20px 0;
     width: 90%;
     margin: 0 auto;
+    padding: 50px 0;
   }
   .habit-container {
     max-width: 100%;
@@ -891,6 +894,7 @@ footer hr {
   }
   .habits-grid {
     grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
 
   /* Section 2 Running styling */
@@ -905,7 +909,7 @@ footer hr {
   .extra-mile h2 {
     font-size: 2rem;
   }
-  
+
   .extra-mile .btn-primary {
     width: 100%;
     padding: 10px 20px;
@@ -939,7 +943,6 @@ footer hr {
   .training-content h2 {
     font-size: 2rem;
     margin: 20px 0px;
-
   }
   .row-1,
   .row-2 {
@@ -968,7 +971,7 @@ footer hr {
     width: 100%;
     text-align: left;
     padding: 0px;
-    margin: 20px 0px;
+    margin: 40px 0px;
   }
   .bmi-form-container {
     width: 100%;
@@ -999,18 +1002,35 @@ footer hr {
     gap: 20px;
     padding: 20px;
   }
-  #team-member-hide {
+  #team-member-change-1 {
     display: none;
+    order: 1;
+  }
+  #team-member-change-2 {
+    order: 2;
+  }
+  #team-member-change-3 {
+    order: 5;
+  }
+  #team-member-change-4 {
+    display: none;
+    order: 4;
+  }
+  #team-member-change-5 {
+    order: 3;
+  }
+  #team-member-change-6 {
+    order: 6;
   }
 
   /* Testimonial Styling */
   .testimonial {
-  padding: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
   }
-  .testimonial-content{
+  .testimonial-content {
     text-align: left;
   }
-  .testimonial-content h2{
+  .testimonial-content h2 {
     font-size: 2rem;
   }
   .testimonial-grid {
