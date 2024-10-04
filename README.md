@@ -3,7 +3,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Fitness_Website-blue?style=flat&logo=github)](https://github.com/TheToriqul/Fitness-Website)
 [![GitHub stars](https://img.shields.io/github/stars/TheToriqul/Fitness-Website?style=social)](https://github.com/TheToriqul/Fitness-Website/stargazers)
 
-This project is a fitness website designed to be responsive for large (desktop) and small (mobile) devices only, providing information about fitness services, workouts, and team members.
+This project is a fitness website designed to be responsive for large (desktop) and small (mobile) devices only, providing information about fitness services, workouts, and team members. It includes an interactive BMI calculator with personalized recommendations.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -16,6 +16,7 @@ This project is a fitness website designed to be responsive for large (desktop) 
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [BMI Calculator Features](#bmi-calculator-features)
 - [Customization](#customization)
 - [Browser Compatibility](#browser-compatibility)
 - [Performance Considerations](#performance-considerations)
@@ -27,7 +28,7 @@ This project is a fitness website designed to be responsive for large (desktop) 
 
 ## Overview
 
-This fitness website is designed to showcase fitness services, workouts, and team members. It includes various sections to engage users and provide valuable information. The website is specifically optimized for large (desktop) and small (mobile) devices, ensuring a seamless experience on these two device types.
+This fitness website is designed to showcase fitness services, workouts, and team members. It includes various sections to engage users and provide valuable information, including a fully functional BMI calculator. The website is specifically optimized for large (desktop) and small (mobile) devices, ensuring a seamless experience on these two device types.
 
 ## Features
 
@@ -37,7 +38,12 @@ This fitness website is designed to showcase fitness services, workouts, and tea
 - Habit-changing section with exercise categories
 - Running promotion section
 - Training and exercises showcase
-- BMI calculator with chart
+- Interactive BMI calculator with:
+  - Personal metrics input (height, weight, age, sex)
+  - Activity level consideration
+  - BMI calculation and weight status
+  - Daily calorie needs estimation
+  - Personalized recommendations
 - Team members presentation
 - Customer testimonials
 - Footer with additional links and information
@@ -50,87 +56,44 @@ Visit the live demo: [Fitness Website](https://thetoriqul.github.io/Fitness-Webs
 
 - HTML5
 - CSS3
-- JavaScript (FontAwesome kit)
+- JavaScript (ES6+)
 - FontAwesome for icons
 
 ## Project Structure
 
-```
-fitness-website/
-│
-├── index.html
-├── styles/
-│   └── style.css
-├── images/
-│   └── (various image files)
-└── README.md
-```
+<figure >
+    <p align="center">
+        <img src="./images/diagram.png" alt="project architecture" />
+        <p align="center">Project Architecture</p> 
+    </p>
+   </figure>
 
-## Sections
+## BMI Calculator Features
 
-1. Header with navigation
-2. Hero section
-3. Change Your Habits
-4. Run an Extra Mile
-5. Trainings and Exercises
-6. BMI Calculator
-7. Meet Our Team
-8. Testimonials
-9. Footer
+The newly implemented BMI calculator (`index.js`) includes:
 
-## Getting Started
+1. **Input Handling:**
+   - Height (cm)
+   - Weight (kg)
+   - Age
+   - Sex selection
+   - Activity level selection
 
-### Prerequisites
+2. **Calculations:**
+   - BMI computation
+   - Basal Metabolic Rate (BMR)
+   - Daily calorie needs based on activity level
 
-- A modern web browser (desktop or mobile)
-- Basic understanding of HTML and CSS (for customization)
+3. **Results Display:**
+   - BMI value
+   - Weight status (Underweight, Healthy, Overweight, Obese)
+   - Estimated daily calorie needs
+   - Personalized recommendations based on results
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/TheToriqul/Fitness-Website.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Fitness-Website
-   ```
-3. Open `index.html` in a web browser to view the website
-
-## Usage
-
-Navigate through the website sections using the menu. Explore the fitness services, workouts, and team information. The site is optimized for viewing on large (desktop) and small (mobile) devices only.
-
-## Customization
-
-- To change the color scheme, modify the CSS variables in the `:root` selector in `style.css`.
-- To add or remove sections, edit the `index.html` file and update the corresponding styles in `style.css`.
-- To change images, replace the files in the `images` folder and update the `src` attributes in the HTML file.
-- When customizing, ensure changes look good on both large (desktop) and small (mobile) devices.
-
-## Browser Compatibility
-
-This website is designed to be compatible with modern web browsers, including:
-- Google Chrome
-- Mozilla Firefox
-- Safari
-- Microsoft Edge
-
-Note: Ensure to test on both large (desktop) and small (mobile) devices for each browser.
-
-## Performance Considerations
-
-- Optimize images for web to reduce load times, especially for mobile devices.
-- Minify CSS and JavaScript files for production.
-- Consider lazy loading images for improved performance on slower connections, particularly on mobile devices.
-
-## Testing
-
-Manually test the website on various large (desktop) and small (mobile) devices to ensure responsiveness and functionality. Focus on:
-
-1. Desktop/large device views
-2. Mobile/small device views
-3. Functionality of interactive elements on both device types
+4. **Input Validation:**
+   - Ensures all required fields are filled
+   - Validates numerical inputs
+   - Prevents form submission with invalid data
 
 ## Deployment
 
@@ -145,11 +108,15 @@ To deploy using GitHub Pages:
 
 ## Future Enhancements
 
-- Implement a fully functional BMI calculator using JavaScript.
-- Add a blog section for fitness tips and articles.
-- Integrate a workout scheduling system.
-- Develop a mobile app version of the website.
-- Consider developing a tablet-specific layout if needed in the future.
+- Expand the BMI calculator functionality:
+  - Add metric/imperial unit toggle
+  - Include body fat percentage estimation
+  - Add progress tracking features
+- Add a blog section for fitness tips and articles
+- Integrate a workout scheduling system
+- Develop a mobile app version of the website
+- Consider developing a tablet-specific layout if needed in the future
+- Add exercise tracking and goal setting features
 
 ## Contributing
 
