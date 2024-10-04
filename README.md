@@ -5,27 +5,6 @@
 
 This project is a fitness website designed to be responsive for large (desktop) and small (mobile) devices only, providing information about fitness services, workouts, and team members. It includes an interactive BMI calculator with personalized recommendations.
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Demo](#demo)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Sections](#sections)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [BMI Calculator Features](#bmi-calculator-features)
-- [Customization](#customization)
-- [Browser Compatibility](#browser-compatibility)
-- [Performance Considerations](#performance-considerations)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [Contact](#contact)
-
 ## Overview
 
 This fitness website is designed to showcase fitness services, workouts, and team members. It includes various sections to engage users and provide valuable information, including a fully functional BMI calculator. The website is specifically optimized for large (desktop) and small (mobile) devices, ensuring a seamless experience on these two device types.
