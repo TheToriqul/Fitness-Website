@@ -606,6 +606,51 @@ select:focus {
   background-color: #f44336;
 }
 
+/* BMI Results Container Styling */
+.bmi-results {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  border: 1px solid #404040;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.results-content {
+  text-align: center;
+}
+
+.results-content h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.results-content p {
+  margin: 12px 0;
+  font-size: 1.1rem;
+  color: #d0d0d0;
+}
+
+.results-content strong {
+  color: #4a90e2;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Animation for results appearance */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
 /* Team Section Styles */
 .team {
   padding: 80px 0;
